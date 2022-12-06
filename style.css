@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --search-color : #06181C;
+  --search-btn-color:#065E7C;
+  --table-header-color:#092D38;
+  --table-line1-color:#06161B80;
+  --table-line2-color:#06181C;
+  
+  --remove-btn: #F75A68;
+
+  --ff-body: 'Roboto', sans-serif;
+
+}
+
+body * {
+font-family: var(--ff-body);
+color: white;
+
+}
+body{
+  background-color: black;
+  display: grid;
+place-items: center;
+}
+
+.app {
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  max-width: 112rem;
+
+}
+
+
+header {
+
+display: flex;
+justify-content: space-between;
+gap: 10rem;
+margin-bottom: 8rem;
+margin-top: 5rem;
+
+
+}
+
+.search {
+  display: flex;
+  
+  flex-direction: row;  
+}
+
+.search  input {
+background-color: var(--search-color);
+color: white;
+width: 46.2rem;
+border: none;
+}
+
+::placeholder {
+  color: #7C7C8A;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--remove-btn);
+  font-weight: bold;
+
+
+}
+.search button {
+  background-color: var(--search-btn-color);
+  padding: 0.8rem;
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+  align-items: center;
+  border-radius: 8px;
+  
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+table thead tr th {
+  font-weight: bold;
+
+}
+table th {
+  font-weight: bold;
+
+  background: var(--table-header-color);
+  text-align: left;
+  padding-left: 1.5rem;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+
+table  {
+border-radius: .4rem .4rem .4rem .4rem;
+}
+
+table .btn-remove {
+  color: var(--remove-btn);
+  font-weight: bold;
+}
+table tr:last-child {
+  border-bottom-right-radius: .4rem;
+}
+
+table tr:nth-child(even) {
+  background: var(--table-line1-color);
+}
+
+table tr:nth-child(odd) {
+  background: var(--table-line2-color);
+}
+
+.user {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.user img {
+  width: 8rem;
+  height: 12rem;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
